@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/converter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="viewEnd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:rotationX="4"
+        android:text="value"
+        android:textColor="#0B128C"
+        android:textColorHighlight="#875F11"
+        android:textColorHint="#CAB422"
+        android:textColorLink="#B59227"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="119dp"
+        android:layout_height="72dp"
+        android:shadowColor="#39800B"
+        android:text="convert"
+        android:textColor="#D1DD08"
+        android:textColorHighlight="#CDCA02"
+        android:textColorHint="#BFBC06"
+        android:textColorLink="#9C940B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintVertical_bias="0.238"
+        app:rippleColor="#910909"
+        app:strokeColor="#081C01" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#8E8706"
+        android:textColorHighlight="#8F7D07"
+        android:textColorHint="#BA950E"
+        android:textColorLink="#B89D11"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="146dp"
+        android:layout_height="52dp"
+        android:text="Enter the kg value :  "
+        android:textColor="#396309"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:srcCompat="@drawable/image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
